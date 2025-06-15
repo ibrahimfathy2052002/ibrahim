@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibrahim Fathy - Portfolio</title>
+  <link rel="icon" href="favicon.ico" />
+  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-purple-800 to-orange-400 text-white font-sans">
+  <div id="root"></div>
+  <script type="text/babel">
+    const App = () => (
+      <div>
+        <nav className="bg-purple-900 p-4 shadow-md sticky top-0 z-50">
+          <div className="container mx-auto flex justify-between items-center">
+            <h1 className="text-2xl font-bold text-orange-400">Ibrahim Fathy</h1>
+            <div className="space-x-4">
+              <a href="#about" className="hover:text-orange-200">About</a>
+              <a href="#projects" className="hover:text-orange-200">Projects</a>
+              <a href="#contact" className="hover:text-orange-200">Contact</a>
+            </div>
+          </div>
+        </nav>
+
+        <header className="text-center py-24 bg-purple-800">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Welcome to My Portfolio</h2>
+          <p className="text-lg md:text-xl mb-6">I’m Ibrahim Fathy, a Mechatronics Engineer</p>
+          <a href="#about" className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-lg transition">Learn More</a>
+        </header>
+
+        <section id="about" className="py-16 px-6 max-w-3xl mx-auto">
+          <h3 className="text-3xl font-bold text-orange-200 mb-4">About Me</h3>
+          <p className="text-white text-lg">
+            I am a Mechatronics Engineer from Egypt, graduated with Honors from the Higher Technological Institute in 2025.
+            Skilled in PLC programming (Siemens TIA Portal), SolidWorks design, hydraulic troubleshooting, and diesel engine maintenance.
+          </p>
+        </section>
+
+        <section id="projects" className="py-16 px-6 bg-purple-700">
+          <h3 className="text-3xl font-bold text-orange-200 text-center mb-8">Projects</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="bg-purple-900 p-6 rounded shadow">
+              <h4 className="text-xl font-bold mb-2 text-orange-400">SCARA Robot Arm</h4>
+              <p>Designed and programmed a multi-tasking SCARA robot using SolidWorks and Siemens TIA Portal.</p>
+            </div>
+            <div className="bg-purple-900 p-6 rounded shadow">
+              <h4 className="text-xl font-bold mb-2 text-orange-400">Diesel Engine Workshop</h4>
+              <p>Overhauled diesel engines and improved operational efficiency by 15%.</p>
+            </div>
+            <div className="bg-purple-900 p-6 rounded shadow">
+              <h4 className="text-xl font-bold mb-2 text-orange-400">Hydraulic Circuits Training</h4>
+              <p>Troubleshot hydraulic circuits and enhanced system reliability for heavy equipment.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="py-16 px-6 text-center">
+          <h3 className="text-3xl font-bold text-orange-200 mb-4">Contact</h3>
+          <p>Email: ibrahimfathy2052002@gmail.com</p>
+          <p>
+            <a href="https://linkedin.com/in/ibrahim-fathy" className="text-orange-300 hover:underline">LinkedIn</a> | 
+            <a href="https://github.com/ibrahimfathy2052002" className="text-orange-300 hover:underline">GitHub</a>
+          </p>
+        </section>
+      </div>
+    );
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
